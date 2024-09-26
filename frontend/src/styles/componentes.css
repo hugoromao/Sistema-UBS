@@ -1,0 +1,108 @@
+/* Sidebar */
+
+div.sidebar {
+    width: 16vw;
+    height: 100vh;
+    background-color: #233876;
+    color: white;
+}
+
+div.sidebar .p-menu {
+    background-color: #233876;
+    width: 100%;
+    border: none;
+}
+
+div.sidebar .p-menu-list {
+    width: 80%;
+}
+
+div.sidebar .p-menuitem .p-menuitem-text,
+div.sidebar .p-menuitem .p-menuitem-icon {
+    color: white;
+}
+
+div.sidebar .p-menuitem .p-menuitem-link:hover {
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+
+div.sidebar .p-menuitem .p-menuitem-link:hover .p-menuitem-text,
+div.sidebar .p-menuitem .p-menuitem-link:hover .p-menuitem-icon {
+    color: white;
+}
+
+/* AgendamentosBox */
+
+.agendamentos-box {
+    box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+
+.agendamentos {
+    padding: 5px 20px;
+}
+
+.agendamento {
+    width: 18%;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+div.agendamentos-box .p-calendar-w-btn {
+    color: inherit;
+    border-color: #EFF0F5;
+}
+
+div.agendamentos-box .p-calendar-w-btn .p-inputtext {
+    height: 1.75rem;
+    color: inherit;
+    border-color: inherit;
+}
+
+div.agendamentos-box .p-calendar-w-btn .p-button {
+    height: 1.75rem;
+    background: none;
+    border: 1px solid;
+    border-color: inherit;
+    border-left: none;
+    color: #A2A6B1;
+}
+
+/* ListaPacientes */
+
+div.lista-pacientes {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    background: #FDFDFD;
+    box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+div.lista-pacientes header {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.lista-pacientes .p-inputtext {
+    height: 2rem;
+    width: 100%;
+}
+
+/* CardPaciente */
+
+div.card-paciente {
+    background: #FDFDFD;
+    box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+div.card-paciente header {
+    font-size: 20px;
+}
+
+div.card-paciente div.card-paciente-lado {
+    width: 48%;
+}

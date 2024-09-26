@@ -1,0 +1,45 @@
+version: '3.7'
+
+volumes:
+  db:
+
+services:
+  backend:
+    image: backendubs
+    build: ./backend
+    ports:
+      - 3001:3001
+    restart: always
+    tty: true
+    depends_on:
+      - banco
+    environment:
+      POSTGRES_DB: ubs
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PORT: 3001
+  frontend:
+    image: frontendubs
+    build:
+      context: ./frontend
+      args:
+        PORT: 3000
+        NODE_ENV: "production"
+        BACKEND_API_URL: "http://backend:3001"
+    ports:
+      - 3000:3000
+    tty: true
+    depends_on:
+      - backend
+  banco:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_DB: ubs
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5433:5432
+    volumes:
+      - db:/var/lib/postgresql/data
+      

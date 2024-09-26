@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.main {
+    display: block;
+    padding: 10px 24px;
+    width: 84vw;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* login */
+
+header.header-login {
+    box-shadow: 0px 0px 10px black;
+    height: 80px;
+}
+
+footer.footer-login {
+    background-color: #233876;
+    height: 80px;
+}
+
+section.login-box {
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 4px #E2E4E9;
+}
+
+section.login-box p-inputtext:focus-within {
+    background: white;
+}
+
+/* Home */
+
+.pacientes-dashboard {
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.15);
+    padding: 10px 5px;
+}
+
+.quantidade-pacientes {
+    font-size: 5em;
+}
+
+/* Consultas */
+
+div.cadastro-consulta {
+    box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+div.cadastro-consulta div.flex.flex-column {
+    /* height: 15.625rem; */
+    width: 30%;
+}
+
+div.main div.cadastro-consulta .p-button {
+    background: #233876;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 8px 16px;
+}
+
+div.main div.cadastro-consulta .p-inputtext {
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.main div.cadastro-consulta .p-listbox-item {
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.main div.cadastro-consulta .p-listbox-header {
+    background: none;
+    padding: 0px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+div.main div.cadastro-consulta .p-listbox {
+    border: none;
+}
+
+div.main div.cadastro-consulta .p-calendar-w-btn {
+    color: inherit;
+    border-color: #EFF0F5;
+}
+
+div.main div.cadastro-consulta .p-calendar-w-btn .p-inputtext{
+    height: 2rem;
+    color: inherit;
+    border-color: inherit;
+}
+
+div.main div.cadastro-consulta .p-calendar .p-button {
+    height: 2rem;
+    background: none;
+    border: 1px solid;
+    border-color: inherit;
+    border-left: none;
+    color: #A2A6B1;
+}
+
+div.cadastro-consulta header {
+    font-size: 20px;
+}
+
+div.main div.cadastro-consulta div.horarios .p-button {
+    background: #EFF0F5;
+    border-radius: 5px;
+    border: none;
+    color: #A2A6B1;
+}
+
+div.main div.cadastro-consulta .p-button.confirm-form {
+    background: #00A551;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+/* Pacientes */
+
+.cadastro-paciente {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    background: #FDFDFD;
+    box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.cadastro-paciente header {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cadastro-paciente .p-inputtext {
+    padding: 5px 10px;
+}
+
+div.main .cadastro-paciente .p-button.confirm-form {
+    background: #00A551;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+}
